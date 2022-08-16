@@ -12,8 +12,8 @@ const merge = (firstArray, secondArray) => {
   let sorted = [];
   while (firstArray.length > 0 && secondArray.length > 0) {
     firstArray[0] > secondArray[0]
-      ? sorted.push(secondArray[0])
-      : sorted.concat(firstArray[0]);
+      ? sorted.push(secondArray.slice(1))
+      : sorted.push(firstArray.slice(1));
   }
 
   return sorted;
