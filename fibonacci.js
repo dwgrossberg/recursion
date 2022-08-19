@@ -17,8 +17,8 @@ function fibsRecursive(num) {
   if (num <= 2) {
     return [0, 1];
   }
-  let a = fibsRecursive(num - 1);
-  a.push(a[num - 2] + a[num - 3]);
+  let a = fibsRecursive(num);
+  a.push(a[num - 1] + a[num - 2]);
   return a;
 }
 
