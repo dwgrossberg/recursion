@@ -10,7 +10,7 @@ const mergeSort = (array) => {
 
 const merge = (firstArray, secondArray) => {
   let sorted = [];
-  // loop through the sorted arrays to find the larger element
+  // loop through the sorted arrays to find the largest element
   while (firstArray.length > 0 && secondArray.length > 0) {
     firstArray[0] > secondArray[0]
       ? sorted.push(secondArray.shift())
